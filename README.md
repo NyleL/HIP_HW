@@ -1,2 +1,3 @@
 # HIP_HW
-First homework assignment.
+First homework assignment. 
+This is my first push.
