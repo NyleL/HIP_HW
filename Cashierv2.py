@@ -2,14 +2,14 @@
 items = input("Welcome to Ralphs, what would you like today: ")
 print("I would like " + items)
 
-
+total = 0
 #addition of "while true" keeps the loop continuous
 while True:
     # the use of "float" allows our inputs to multiply
     quantity = float(input("quantity: "))
     price = float(input("price: "))
+    total =  total + price*quantity
 
-    total = price*quantity
     print("total: " + str(total))
 
 #using if and else statement allows the user to enter the final part of the receipt
@@ -18,8 +18,9 @@ while True:
         st = input("Would you like to add sales tax?: ")
         y = st
 #give the sales tax a value to multiply to final total
-        sales_tax = 9.5
+        sales_tax = 1.09
         if st == y:
+            totaltax = total + total*sales_tax
             print("Final Total: " + str(total*sales_tax))
         else:
             print("Final Total: " + str(total))
